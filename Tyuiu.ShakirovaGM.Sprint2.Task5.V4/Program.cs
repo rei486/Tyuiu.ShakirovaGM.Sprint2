@@ -1,5 +1,5 @@
-﻿using Tyuiu.ShakirovaGM.Sprint2.Task0.V12.Lib;
-namespace Tyuiu.ShakirovaGM.Sprint2.Task0.V12
+﻿using Tyuiu.ShakirovaGM.Sprint2.Task5.V4.Lib;
+namespace Tyuiu.ShakirovaGM.Sprint2.Task5.V4
 {
     internal class Program
     {
@@ -11,37 +11,38 @@ namespace Tyuiu.ShakirovaGM.Sprint2.Task0.V12
             //Длинна строки 75 символов
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #2                                                               *");
-            Console.WriteLine("* Тема: Операции сравнения                                                *");
-            Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант #12                                                             *");
+            Console.WriteLine("* Тема: Оператор switch                                                   *");
+            Console.WriteLine("* Задание #5                                                              *");
+            Console.WriteLine("* Вариант #4                                                              *");
             Console.WriteLine("* Выполнил: Шакирова Гузель Мансуровна | РППб-24-1                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу из операций сравнений                                *");
-            Console.WriteLine("* (==,!=,<,>,<=,>= последовательность операций не должна нарушаться)      *");
-            Console.WriteLine("* и арифметических выражений,которая вернет логическую последовательность *");
-            Console.WriteLine("* (массив):(True, False, True, False, True, False)                        *");
-            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* Мастям игральных карт условно присвоены следующие порядковые номера:    *");
+            Console.WriteLine("* масти «пики»—1, масти «трефы»—2, масти «бубны»—3, масти «червы»—4.      *");
+            Console.WriteLine("* По заданному номеру масти m (1 <= m <= 4) определить название           *");
+            Console.WriteLine("* соответствующей масти.                                                  *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            
-            int x = 1095;
-            int y = 475;
-            bool[] res = new bool[6];
-            res = ds.GetCompareOperations(x, y);
-            Console.WriteLine("X = "+x);
-            Console.WriteLine("Y = "+y);
 
+
+            Console.WriteLine("Введите номер масти: ");
+            int m = Convert.ToInt32(Console.ReadLine());
+
+            string res;
+            if ((m < 1) || (m > 4))
+                res = "Введено неверное значение";
+            else
+                res = "Это масть " + ds.FindCardSuit(m);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            for (int i = 0; i < 6; i++)
-            {
-                Console.WriteLine(res[i]);
-            }
+
+            Console.WriteLine(res);
+
             Console.ReadLine();
         }
     }
+    
 }

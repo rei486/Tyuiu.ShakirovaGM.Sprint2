@@ -7,7 +7,7 @@ namespace Tyuiu.ShakirovaGM.Sprint2.Task4.V19
         {
             DataService ds = new DataService();
 
-            Console.Title = "Спринт #1 | Выполнил: Шакирова Г. М. | РППб-24-1";
+            Console.Title = "Спринт #2 | Выполнил: Шакирова Г. М. | РППб-24-1";
             //Длинна строки 75 символов
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #2                                                               *");
