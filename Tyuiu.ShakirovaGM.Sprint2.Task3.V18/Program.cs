@@ -11,8 +11,8 @@ namespace Tyuiu.ShakirovaGM.Sprint2.Task3.V18
             //Длинна строки 75 символов
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #2                                                               *");
-            Console.WriteLine("* Тема: Оператор if – полная и короткая форма записи                      *");
-            Console.WriteLine("* Задание #2                                                              *");
+            Console.WriteLine("* Тема: Вложенные операторы if - else                                     *");
+            Console.WriteLine("* Задание #3                                                              *");
             Console.WriteLine("* Вариант #18                                                             *");
             Console.WriteLine("* Выполнил: Шакирова Гузель Мансуровна | РППб-24-1                        *");
             Console.WriteLine("***************************************************************************");
